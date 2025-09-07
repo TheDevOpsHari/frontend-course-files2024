@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-projuct</title>
+    <link rel="icon" type="image/x-icon" href="img/r-icon.png">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(245, 5, 5);
+            background-color: black;
+            color: wheat;
+        }
+
+        th,
+        td {
+            border-radius: 8px;
+            border-style: ridge;
+            border-color: rgb(0, 255, 55);
+
+        }
+        th,td{
+            padding: 15px;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        tr:hover,td:hover,th:hover
+        {
+            background-color: greenyellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 90%; text-align: center;">
+        <tr>
+            <th style="width: 25%;">f name</th>
+            <td>rahul</td>
+            <td>yogi</td>
+            <td>ajay</td>
+            <td>harish</td>
+            <td>vipul</td>
+        </tr>
+        <tr>
+            <th>l name</th>
+            <td>kumar</td>
+            <td>kumar</td>
+            <td>yadav</td>
+            <td>kumar</td>
+            <td>saluja</td>
+        </tr>
+        <tr>
+            <th>age</th>
+            <td>18</td>
+            <td>17</td>
+            <td>16</td>
+            <td>15</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <th>class</th>
+            <td>12</td>
+            <td>11</td>
+            <td>10</td>
+            <td>9</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th>room</th>
+            <td>12</td>
+            <td>40</td>
+            <td>13</td>
+            <td>45</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+        <col span="3" style="background-color: aqua;"></colgroup>
+        <tr>
+            <th colspan="2">name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>rahul</td>
+            <td>kumar</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>ajay</td>
+            <td>yadav</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <br><br>
+    <table border="2px solid">
+        <tr>
+            <th colspan="2">name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td rowspan="2">rahul</td>
+            <td>kumar</td>
+            <td>20</td>
+        </tr>
+        <tr>
+
+            <td>yadav</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <table border="2px solid" style="text-align: center; border-collapse: collapse;">
+        <caption style="color: black;">This is table caption</caption>
+        <tr>
+            <th>sr.no</th>
+            <th rowspan="2">name</th>
+            <th>age</th>
+            <th>city</th>
+            <th>value</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>rahul</td>
+            <td>20</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>rahul</td>
+            <td>20</td>
+            <td>hanumangarh</td>
+            <td>nill</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sumit</td>
+            <td>21</td>
+            <td>hanumangarh</td>
+            <td>www</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>amit</td>
+            <td colspan="2">23</td>
+            <td>span</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>rishi</td>
+            <td>22</td>
+            <td>hanumangarh</td>
+            <td>span</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
