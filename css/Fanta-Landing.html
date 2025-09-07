@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta website Landing Page</title>
+    <link rel="stylesheet" href="Fanta-Landing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <a href="https://www.coca-colacompany.com/">
+                <h1 class="rubik-bubbles-regular" style="font-size: 30px;">The Coca-Cola Company</h1>
+            </a>
+            <div class="cntr-nav">
+                <a class="Hover" href="https://www.coca-cola.com/in/en/brands">Brands</a>
+                <a class="Hover" href="https://cokestudio.coke2home.com/bharat">Discover</a>
+                <a class="Hover" href="https://www.bigbasket.com/pb/coca-cola/?nc=brandlabel">Shop</a>
+                <a class="Hover" href="#">Contact</a>
+            </div>
+            <i class="ri-menu-fill"></i>
+        </nav>
+        <div class="one">
+            <h1>FANTA</h1>
+            <img id="orange-cut" src="Img/orange2.png" alt="">
+            <img id="fanta" src="Img/fanta.png" alt="">
+            <img id="orange" src="Img/orange.webp" alt="">
+            <img id="leaf" src="Img/leaf.webp" alt="">
+            <img id="leaf2" src="Img/leaf2.png" alt="">
+            <img id="leaf3" src="Img/coconoutleaf.png" alt="">
+        </div>
+        <div class="two">
+            <div class="lft-two">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#e04428"
+                        d="M41.5,-59.5C49.8,-51.1,49.7,-33.6,50.7,-19.2C51.7,-4.7,53.8,6.7,52.4,18.9C51.1,31.1,46.3,44.1,36.9,52.9C27.6,61.8,13.8,66.5,-2.5,70C-18.8,73.4,-37.7,75.6,-52.5,68.5C-67.3,61.5,-78.2,45.2,-84.5,27.1C-90.9,9,-92.7,-10.8,-80.5,-19.3C-68.3,-27.8,-42.1,-24.8,-26.3,-30.8C-10.6,-36.8,-5.3,-51.7,5.7,-59.5C16.6,-67.3,33.2,-68,41.5,-59.5Z"
+                        transform="translate(100 100)" />
+                </svg>
+            </div>
+            <div class="rght-two">
+                <h1>Flavour Updated</h1>
+                <p>FANTA: CARBONATED WATER. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN
+                    PRODUCT.
+
+                    FANTA APPLE DELITE: CARBONATED FRUIT BEVERAGE. CONTAINS 10.5% APPLE JUICE. CONTAINS NO FRUIT PIECES.
+                    "BITE" REFERS TO CRISPY, CRUNCHY TASTE OF APPLE. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA
+                    COMPANY. VEGETARIAN PRODUCT.</p>
+            </div>
+        </div>
+        <div class="three">
+            <div class="card">
+                <img class="lemon lemon1" src="Img/lemon.webp" alt="">
+                <img id="cocacola" src="Img/cocacola.png" alt="">
+                <br><br><br>
+                <h1>CocaCola</h1>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <br><br><br>
+                <h1>Fanta</h1>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <img class="lemon lemon2" src="Img/lemon.webp" alt="">
+                <img id="pepsi" src="Img/pepsi.png" alt="">
+                <br><br><br>
+                <h1>Pepsi</h1>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script>
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".two",
+                start: "0% 95%",
+                end: "70% 50%",
+                scrub: true,
+                // markers: true,
+            }
+        })
+
+        tl.to("#fanta", {
+            top: "120%",
+            left: "0%"
+        }, 'orange')
+        tl.to("#orange-cut", {
+            top: "160%",
+            left: "23%"
+        }, 'orange')
+        tl.to("#orange", {
+            width: "15%",
+            top: "160%",
+            right: "10%"
+        }, 'orange')
+        tl.to("#leaf", {
+            top: "110%",
+            rotate: "130deg",
+            left: "70%"
+        }, 'orange')
+        tl.to("#leaf2", {
+            top: "110%",
+            rotate: "130deg",
+            left: "0%"
+        }, 'orange')
+
+
+        var tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".three",
+                start: "0% 95%",
+                end: "20% 50%",
+                scrub: true,
+                // markers: true,
+            }
+        })
+
+        tl2.from(".lemon1", {
+            rotate: "-90deg",
+            left: "-100%",
+            top: "110%"
+        }, 'ca')
+        tl2.from("#cocacola", {
+            rotate: "-90deg",
+            top: "110%",
+            left: "-100%",
+        }, 'ca')
+
+        tl2.from(".lemon2", {
+            rotate: "90deg",
+            left: "100%",
+            top: "110%"
+        }, 'ca')
+        tl2.from("#pepsi", {
+            rotate: "90deg",
+            top: "110%",
+            left: "100%",
+        }, 'ca')
+
+        tl2.to("#orange-cut", {
+            width: "18%",
+            left: "42%",
+            top: "204%"
+        }, 'ca')
+        tl2.to("#fanta", {
+            width: "35%",
+            top: "210%",
+            left: "33%",
+        }, 'ca')
+
+    </script>
+</body>
+
+</html>

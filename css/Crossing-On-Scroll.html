@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Crossing-On-Scroll.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="text" class="text0">Around The World</div>
+    <div id="text" class="text1">Around The World</div>
+    <div id="text" class="text2">Around The World</div>
+    <div id="text" class="text3">Around The World</div>
+
+
+
+    <div id="dummy">
+        <div id="back">BACK TO TOP</div>
+    </div>
+
+    <script>
+        gsap.to('.text0', {
+            x: '20%', rotate: 10, duration: 0.85, scrollTrigger: {
+                trigger: '.text0',
+                scrub: true,
+                start: 'top 20%'
+            }
+        })
+        gsap.to('.text2', {
+            x: '20%', rotate: 10, duration: 0.85, scrollTrigger: {
+                trigger: '.text2',
+                scrub: true,
+                start: 'top 40%'
+            }
+        })
+        gsap.to('.text1', {
+            x: '-20%', rotate: -10, duration: 0.85, scrollTrigger: {
+                trigger: '.text1',
+                scrub: true,
+                start: 'top 30%'
+            }
+        })
+        gsap.to('.text3', {
+            x: '-20%', rotate: -10, duration: 0.85, scrollTrigger: {
+                trigger: '.text3',
+                scrub: true,
+                start: 'top 40%'
+            }
+        })
+        document.querySelector('#back').addEventListener('click', () => {
+            gsap.to(window, { duration: 1, scrollTo: 'body' });
+
+        })
+
+    </script>
+</body>
+
+</html>

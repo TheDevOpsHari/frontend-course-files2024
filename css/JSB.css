@@ -1,0 +1,120 @@
+
+body {
+    background: linear-gradient(to bottom right, black, tan)
+}
+
+h2 {
+    font-family: "Emilys Candy", cursive;
+    text-align: center;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: tan;
+}
+
+.header>span {
+    font-size: 80px;
+    font-family: Emilys Candy;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+
+}
+
+.navbar-options>li {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+}
+
+.navbar-options>li>a {
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+}
+
+.navbar-options>li>a:hover {
+    background-color: lightgray;
+}
+
+.social {
+    text-align: right;
+
+}
+
+.footer {
+    background-color: tan;
+    padding: 20px;
+}
+
+.social>span {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.fa {
+    font-size: 300%;
+    padding: 8px;
+    color: white;
+
+}
+
+.fa:hover {
+    color: gold;
+}
+
+.gallery-wrapper {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.gallery {
+    background-color: black;
+}
+
+div.gallery {
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 180px;
+    position: relative;
+    font-family: helvetica;
+
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.price {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}

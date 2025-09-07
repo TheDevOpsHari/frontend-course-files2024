@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Food-Resurant.css">
+
+</head>
+
+<body>
+    <!-- Created by Abhinav-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+
+
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <div class="loading-bar">
+            <div class="main-loading-bar">
+
+
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+            </div>
+
+            <h1 class="please-wait"> please wait...</h1>
+        </div>
+
+
+        <div class="main-container-all">
+            <div class="vegan-icon-main-container">
+                <div class="vegan-icon">
+                    <img class="image-vegan" src="https://i.imgur.com/8EAEooU.jpg" alt="">
+                    <!-- <img class="image-vegan" src="2.jpg" alt=""> -->
+
+                </div>
+            </div>
+
+            <div class="home-menu-container">
+                <div class="menu-text-main-container">
+                    <h1 class="menu-text">menu</h1>
+
+                    <div class="main-bottom-container">
+                        <h1 class="home-text">home</h1>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <h1 class="menu2-text">menu </h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+
+
+                <div class="dises-varaties" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+
+                    <div class="food-image">
+                        <img class="burger-image-handle" src="https://i.imgur.com/St5Q9yf.jpg" alt="">
+                        <!-- <img class="burger-image-handle" src="burger2.jpg" alt=""> -->
+
+                    </div>
+                    <div class="dish-price">
+                        <h1 class="price-handle">vegan Burgers </br>for the price of one</h1>
+
+                        <a class="price-btn" href="#"><span class="sup-text">$</span><span
+                                class="sub-text"><sub>15</sub></span><span class="sup-text">99</span></a>
+
+                    </div>
+
+
+                </div>
+
+                <div class="dishes-varaties2" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <div class="image-dishes">
+                        <img class="image-handle-dish" src="https://i.imgur.com/KRF8gL0.jpg" alt="">
+                        <!-- <img class="image-handle-dish" src="pie1.jpg" alt=""> -->
+
+                    </div>
+                    <div class="dishes-prices">
+
+                        <h1 class="dishes-name">vegetable pie <span class="sub-title">our tasty offer no.1!</span></h1>
+                        <a class="price-btn" href="#"><span class="sup-text">$</span><span
+                                class="sub-text"><sub>14</sub></span><span class="sup-text">99</span></a>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="dishes-varaties2" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <div class="image-dishes">
+                        <img class="image-handle-dish" src="https://i.imgur.com/OdADcU1.jpg" alt="">
+                        <!-- <img class="image-handle-dish" src="4.jpg"alt=""> -->
+
+                    </div>
+                    <div class="dishes-prices">
+
+                        <h1 class="dishes-name">oreo milk <span class="sub-title">our tasty offer no.1!</span></h1>
+                        <a class="price-btn" href="#"><span class="sup-text">$</span><span
+                                class="sub-text"><sub>12</sub></span><span class="sup-text">99</span></a>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="main-container-menu">
+
+                <h1 class="our-menu-heading">our menu</h1>
+                <p class="list-category">Choose your category:
+
+                </p>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">filter <i class="fa fa-chevron-down"
+                            aria-hidden="true"></i></button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <a id="Breakfast" href="#home">Breakfast</a>
+                        <a id="Lunch" href="#about">Lunch</a>
+                        <a id="Salads" href="#contact">Salads</a>
+                        <a id="Cake" href="#contact">Cakes</a>
+                        <a id="Drink" href="#contact">Drink</a>
+                        <a id="Catering" href="#contact">Catering</a>
+                    </div>
+                </div>
+
+                <div class="flex-cate">
+
+                    <div class="dishes-image">
+                        <div class="image-upload">
+                            <img class="image-handle" src="https://i.imgur.com/jLkQ4El.png" alt="">
+                            <!-- <img class="image-handle" src="break1.png"alt="">  -->
+
+
+                            <h1 class="dish-heading-name">Organic Oatmeal</h1>
+                            <p class="dish-title" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">This oatmeal makes a delicious,
+                                chewy, wholesome hot cereal that will give you lasting energy throughout the morning</p>
+                            <h1 class="price-food" data-aos="fade-left" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">$12.50</h1>
+                            <a class="order-btn" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000" href="#">order online</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dishes-image">
+                        <div class="image-upload">
+                            <img class="image-handle" src="https://i.imgur.com/BAAtOE5.png" alt="">
+                            <!-- <img class="image-handle" src="snaks.webp" alt=""> -->
+
+
+                            <h1 class="dish-heading-name">Grilled Panini</h1>
+                            <p class="dish-title" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">Fresh toppings and perfectly
+                                melted cheese makes every bite of our Grilled Panini simply mouthwatering.</p>
+                            <h1 class="price-food" data-aos="fade-left" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">$13.90</h1>
+                            <a class="order-btn" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000" href="#">order online</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dishes-image">
+                        <div class="image-upload">
+                            <img class="image-handle" src="https://i.imgur.com/Quazh6g.png" alt="">
+                            <!-- <img class="image-handle" src="eggs.webp" alt=""> -->
+
+
+                            <h1 class="dish-heading-name">Eggplant Sandwiches</h1>
+                            <p class="dish-title" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">Roasted eggplant in a French
+                                roll with feta cheese, basil and garlic mayonnaise. It’s a No. 1 favorite of our
+                                clients.</p>
+                            <h1 class="price-food" data-aos="fade-left" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">$10.90</h1>
+                            <a class="order-btn" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000" href="#">order online</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dishes-image">
+                        <div class="image-upload">
+                            <img class="image-handle" src="https://i.imgur.com/DaMzoZS.png" alt="">
+                            <!-- <img class="image-handle" src="stack.webp" alt=""> -->
+
+                            <h1 class="dish-heading-name">Stack of Pancakes</h1>
+                            <p class="dish-title" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">Taste this homey goodness of
+                                plain golden pancakes served with whipped butter cooked according to our chef’s recipe.
+                            </p>
+                            <h1 class="price-food" data-aos="fade-left" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">$9.50</h1>
+                            <a class="order-btn" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000" href="#">order online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-container">
+                <ul>
+                    <l1></l1><a href="#">Breakfast</a></l1>
+                    <l1><a href="#">drinks</a></l1>
+                    <l1><a href="#">salads</a></l1>
+                    <l1><a href="#">cakes</a></l1>
+                    <l1><a href="#">catering</a></l1>
+                </ul>
+                <div class="underline">
+
+                </div>
+                <p class="vegan-title" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                    veganfood <i class="fa fa-copyright" aria-hidden="true"></i> 2020 </br><a class="privacy-policy"
+                        href="#">privacy policy</a> </p>
+                <p class="creater">created by <i class="fa fa-heart" aria-hidden="true"></i> Abhinav</p>
+            </div>
+        </div>
+
+
+        <script src="javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            // Created by Abhinav
+
+            window.onload = function () {
+
+
+
+                setTimeout(() => {
+
+                    document.querySelector('.loading-bar').style.display = 'none';
+                    document.querySelector('body').setAttribute('style', 'overflow: scroll;');
+
+                }, 6000);
+
+
+
+                var disheImage = document.querySelectorAll('.image-handle');
+                var disheName = document.querySelectorAll('.dish-heading-name');
+                var dishTitle = document.querySelectorAll('.dish-title');
+                var dishPrice = document.querySelectorAll('.price-food');
+                var dropDownMenu = document.getElementById('myDropdown');
+
+
+                // breakfeast
+
+                BreakfastObj = [
+                    {
+                        name: 'Organic Oatmeal',
+                        desc: 'This oatmeal makes a delicious, chewy, wholesome hot cereal that will give you lasting energy throughout the morning. ',
+                        price: '$12.50 ',
+                        picture: 'https://i.imgur.com/jLkQ4El.png'
+
+                    },
+                    {
+                        name: 'Grilled Panini',
+                        desc: 'Fresh toppings and perfectly melted cheese makes every bite of our Grilled Panini simply mouthwatering. ',
+                        price: '$13.90',
+                        picture: 'https://i.imgur.com/BAAtOE5.png'
+                    },
+                    {
+                        name: 'Eggplant Sandwiches',
+                        desc: 'Roasted eggplant in a French roll with feta cheese, basil and garlic mayonnaise. It’s a No. 1 favorite of our clients.  ',
+                        price: '$10.90 ',
+                        picture: 'https://i.imgur.com/Quazh6g.png '
+                    },
+                    {
+                        name: 'Stack of Pancakes',
+                        desc: 'Taste this homey goodness of plain golden pancakes served with whipped butter cooked according to our chef’s recipe ',
+                        price: '$9.50 ',
+                        picture: 'https://i.imgur.com/DaMzoZS.png'
+                    }
+                ]
+                // lunch
+
+                lunchObj = [
+                    {
+                        name: 'Medu Wada ',
+                        desc: 'Medu Wada is a traditional Indian snack, which is perfect to have during lunchtime, especially dunked in hot sambar ',
+                        price: '$12.50 ',
+                        picture: 'https://i.imgur.com/INeudag.jpg '
+                    },
+                    {
+                        name: 'Zrazy',
+                        desc: 'Zrazy is a traditional Ukrainian snack, which tastes like small meat or potato pie and has a lot of other fillings. ',
+                        price: '$13.90',
+                        picture: 'https://i.imgur.com/MPHlVIV.jpg '
+                    },
+                    {
+                        name: 'Puff Pastry Bun ',
+                        desc: 'These tasty puff pastry buns are perfect sides to any hot drink like tea or coffee during lunch. Try them out at our restaurant! ',
+                        price: '$10.90 ',
+                        picture: 'https://i.imgur.com/QhIVVeK.jpg'
+                    },
+                    {
+                        name: 'Sandwiches with Cheese ',
+                        desc: 'Sandwiches have always been perfect snacks during lunch or dinner, but they taste even better with cheese and dried vegetables ',
+                        price: '$9.50',
+                        picture: 'https://i.imgur.com/QJzWYjm.jpg'
+                    }
+                ]
+
+                // salads
+
+                saladsObj = [
+                    {
+                        name: 'Mozzarella Salad ',
+                        desc: 'Fresh Mozzarella, roasted pepper, tomatoes, walnut, basil pesto, balsamic sauce and mixed green salad served in one bowl. ',
+                        price: '12.50 ',
+                        picture: 'https://i.imgur.com/Y0nrHUR.jpg'
+                    },
+                    {
+                        name: 'Greek Salad ',
+                        desc: 'Cucumbers, grape tomatoes, red onions, banana peppers, black olives, and feta cheese add this salad a real Greek taste. ',
+                        price: '$13.90 ',
+                        picture: 'https://i.imgur.com/722myxX.jpg '
+                    },
+                    {
+                        name: 'Caesar Salad ',
+                        desc: 'All summer vegetables are packed into one salad, which is mixed with a truly Italian flavor. Enjoy this masterpiece at our restaurant! ',
+                        price: '$10.90 ',
+                        picture: 'https://i.imgur.com/diVS1Sf.jpg '
+                    },
+                    {
+                        name: 'Italian Chopped Salad ',
+                        desc: 'All summer vegetables are packed into one salad, which is mixed with a truly Italian flavor. Enjoy this masterpiece! ',
+                        price: '$9.50 ',
+                        picture: 'https://i.imgur.com/d1va70S.jpg '
+                    }
+                ]
+
+                // cake
+
+                cakeObj = [
+                    {
+                        name: 'Strawberry Cake',
+                        desc: 'This cake truly lives up to its name! Three cake layers are filled with strawberry-studded whipped cream, which tastes delicious! ',
+                        price: '$12.50 ',
+                        picture: 'https://i.imgur.com/QHBUQYT.jpg '
+                    },
+                    {
+                        name: 'Domino Cake',
+                        desc: 'Enjoy this classic dessert with cocoa powder, icing sugar, and chocolate filling combined with tasty sponge cakes. ',
+                        price: '$13.90',
+                        picture: 'https://i.imgur.com/9nTxw89.jpg '
+                    },
+                    {
+                        name: 'Coconut Cake',
+                        desc: 'With coconut baked into the cake and a generous sprinkle atop a buttery frosting, this decadent white cake is sure to be your No. 1.',
+                        price: '$10.90',
+                        picture: 'https://i.imgur.com/qRXEU0r.jpg'
+                    },
+                    {
+                        name: 'Cake with Lime',
+                        desc: 'If you enjoy lime and like tasty and sweet desserts, this one will quickly become your favorite.',
+                        price: '$9.50',
+                        picture: 'https://i.imgur.com/uy7o4Mj.jpg'
+                    }
+                ]
+                // drink
+                DrinkObj = [
+                    {
+                        name: 'Lime juice',
+                        desc: 'This amazing lime juice is our favorite as it is healthy and energizing drink, which is also refreshing in summer.',
+                        price: '$12.50',
+                        picture: 'https://i.imgur.com/mcO4hRx.jpg'
+                    },
+                    {
+                        name: 'Strawberry juice ',
+                        desc: 'When it comes to , strawberries get short shrift. This strawberry drink is our summer favorite. ',
+                        price: '$13.90 ',
+                        picture: 'https://i.imgur.com/J04Tjuj.jpg'
+                    },
+                    {
+                        name: 'Orange Juice ',
+                        desc: 'This quick, fresh, and delicious juice is loaded with carrots and oranges, and is a great way to start off your day! ',
+                        price: '$10.90 ',
+                        picture: 'https://i.imgur.com/YJZ4kxj.jpg',
+                    },
+                    {
+                        name: 'Iced Water ',
+                        desc: 'This drink is an old classic enjoyed by many, kids and adults. This will be sure to please especially on a hot day. ',
+                        price: '$9.50 ',
+                        picture: 'https://i.imgur.com/oj0yU3J.jpg'
+                    },
+                ]
+                // catering
+                CateringObj = [
+                    {
+                        name: 'Noodle Soup ',
+                        desc: 'Made-from-scratch noodles are the star of this soup, which is a true classic for all our clients. ',
+                        price: '$12.50 ',
+                        picture: 'https://i.imgur.com/hNJHUv6.jpg '
+                    },
+                    {
+                        name: 'Vegetable Soup',
+                        desc: 'Based on vegetable broth, barley, and lots of veggies, this soup tastes really hearty and filling, and is perfect during dinner. ',
+                        price: '$13.90 ',
+                        picture: 'https://i.imgur.com/DS2PxDr.jpg'
+                    },
+                    {
+                        name: 'Falafel',
+                        desc: 'Deep fried, and made with yellow split peas, onion, fresh mint, and spices, these falafel are great when served in pita with salad. ',
+                        price: '$10.90 ',
+                        picture: 'https://i.imgur.com/UrWjZyT.jpg '
+                    },
+                    {
+                        name: 'Mashed Potatoes ',
+                        desc: 'These simple mashed potatoes are made with a touch of garlic for a supersavory flavor everyone will relish in.',
+                        price: '$9.50 ',
+                        picture: 'https://i.imgur.com/wGstXhV.jpg '
+                    }
+                ]
+
+
+
+
+
+
+                function addLunch() {
+
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = lunchObj[i].name;
+                        dishTitle[i].textContent = lunchObj[i].desc;
+                        dishPrice[i].textContent = lunchObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = lunchObj[i].picture;
+                    }
+
+                }
+
+                function addBreakfast() {
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = BreakfastObj[i].name;
+                        dishTitle[i].textContent = BreakfastObj[i].desc;
+                        dishPrice[i].textContent = BreakfastObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = BreakfastObj[i].picture;
+                    }
+
+                }
+                function addSalads() {
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = saladsObj[i].name;
+                        dishTitle[i].textContent = saladsObj[i].desc;
+                        dishPrice[i].textContent = saladsObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = saladsObj[i].picture;
+                    }
+
+                }
+
+                function addCake() {
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = cakeObj[i].name;
+                        dishTitle[i].textContent = cakeObj[i].desc;
+                        dishPrice[i].textContent = cakeObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = cakeObj[i].picture;
+
+                    }
+                }
+
+
+                function addDrink() {
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = DrinkObj[i].name;
+                        dishTitle[i].textContent = DrinkObj[i].desc;
+                        dishPrice[i].textContent = DrinkObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = DrinkObj[i].picture;
+                    }
+
+                }
+                function addcatering() {
+                    for (var i = 0; i < 4; i++) {
+
+                        disheName[i].textContent = CateringObj[i].name;
+                        dishTitle[i].textContent = CateringObj[i].desc;
+                        dishPrice[i].textContent = CateringObj[i].price;
+                        disheImage[i].src = '';
+                        disheImage[i].src = CateringObj[i].picture;
+                    }
+
+                }
+
+                addBreakfast();
+
+                dropDownMenu.addEventListener('click', function (e) {
+
+                    var target = e.target.id;
+
+
+
+                    if (target === 'Breakfast')
+                        addBreakfast();
+                    else if (target === 'Lunch')
+                        addLunch();
+                    else if (target === 'Salads')
+                        addSalads();
+                    else if (target === 'Cake')
+                        addCake();
+                    else if (target === 'Drink')
+                        addDrink();
+                    else if (target === 'Catering')
+                        addcatering();
+                });
+            }
+
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+
+    </body>
+
+    </html>
