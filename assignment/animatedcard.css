@@ -1,0 +1,39 @@
+*{
+    background-image: url(image/abstract-png.avif);
+}
+#d1{
+    float: left;
+}
+#d2{
+    float: right;
+}
+.card {
+    width: 400px;
+    height: 380px;
+    background-color: rgb(145, 127, 103);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px auto;
+    transition: transform 0.1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Resize image to fill container */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+}

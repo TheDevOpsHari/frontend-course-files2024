@@ -1,0 +1,31 @@
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    /* Adjust width as needed */
+    height: 300px;
+    /* Adjust height as needed */
+}
+
+.slider {
+    display: flex;
+    animation: slide 5s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slider img {
+    width: 100%;
+    /* Adjust image width as needed */
+    height: 100%;
+    object-fit: cover;
+    /* Ensures images fill container */
+}

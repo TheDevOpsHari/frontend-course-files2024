@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-image: url(image/background.png);
+  }
+
+  header {
+    background-image: url(image/programming-background-collage_23-2149901789.avif);
+    color: white;
+    font-size: small;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header:hover{
+    color: yellow;
+    font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  a:hover{
+    color: yellow;
+    font-size: x-large;
+  }
+  
+  main {
+    padding: 50px;
+    color: white;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .hero img {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  
+  .highlights ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .highlights li {
+    margin-bottom: 10px;
+  }
+  
+  .announcements ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .announcements li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  

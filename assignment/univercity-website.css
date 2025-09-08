@@ -1,0 +1,597 @@
+/*
+ * Muhammad Osama Arshad
+ * muhammadosamaarshad@gmail.com
+ * original site: www.uet.edu.pk
+ * replicated for practicing frontend
+ */
+
+
+/* secondaryNav start */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    /*    overflow: hidden;*/
+    height: 175px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.secondaryNav {
+    font-size: .9em;
+    /*    width: 100vw;*/
+    height: 40px;
+    min-height: 30px;
+    margin-bottom: 0;
+    border: none;
+    background-color: #e5a156;
+}
+
+.secondaryNav .container-fluid {
+    padding-right: 150px;
+}
+
+.secondaryNav .nav a,
+.secondaryNav .dropdown-toggle {
+    padding-right: 12px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    color: #ecede7;
+}
+
+.secondaryNav .navbar-nav li>a {
+    color: #e5e4e2;
+}
+
+.secondaryNavLink a:hover,
+.secondaryNavLink a:focus {
+    color: #e5a156 !important;
+    background-color: #e5e4e2 !important;
+}
+
+.secondaryNav .dropdown-menu {
+    /*width: 50px;*/
+    word-wrap: break-word;
+    border: none;
+    border-radius: 0;
+    background-color: #e5e4e2;
+}
+
+.secondaryNav .dropdown-menu li a {
+    font-size: .8em;
+    color: #225db5;
+}
+
+.secondaryNav .dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+
+.secondaryNav li span {
+    padding-top: 15px;
+    padding-left: 15px;
+    color: white;
+}
+
+.searchBar {
+    width: 0;
+    height: 39px;
+    padding: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border: none;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.searchBar:focus {
+    width: 200px;
+}
+
+
+/* secondaryNav end */
+
+
+/* primaryNav start*/
+
+.header-image {
+    position: relative;
+    top: -40px;
+    float: left;
+    overflow: visible;
+    width: 40%;
+    height: 133px;
+    margin-top: .15%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 17px 45px 10px 105px;
+    background-color: white;
+}
+
+.primaryNav {
+    height: 95px;
+    border: none;
+    background-color: #2560b8;
+}
+
+.primaryNav .navbar-nav {
+    position: relative;
+    left: -90px;
+    top: 47px;
+    padding-left: 0;
+}
+
+.primaryNav>.navbar-nav li a {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.primaryNav .open {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.primaryNav .dropdown-menu {
+    width: 500px;
+    padding: 0;
+    border: #e5a156 solid 1px;
+}
+
+.primaryNav .dropdown-menu li {
+    display: inline-block;
+    width: 247px;
+}
+
+.primaryNav .dropdown-menu .primaryNavDropDownLink {
+    padding: 8px;
+    color: #2560b8;
+    border-bottom: #e5a156 solid 1px;
+}
+
+.primaryNav .dropdown-menu a.primaryNavDropDownLink:hover {
+    background-color: #e5a156;
+}
+
+.primaryNav .dropdown a.primaryNavLink {
+    background-color: transparent;
+}
+
+.primaryNavItem a.primaryNavLink.dropdown-toggle:focus,
+.primaryNavItem a.primaryNavLink.dropdown-toggle:hover,
+.primaryNavItem a.primaryNavLink.dropdown-toggle:active {
+    color: #e5a156;
+    background-color: transparent;
+}
+
+
+/* CAROUSEL START*/
+
+#uetCarousel {
+    position: relative;
+    top: -40px;
+}
+
+.carousel-inner {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-inner .item img {
+    width: 100vw;
+    height: 400px;
+}
+
+.carousel-control>span {
+    position: absolute;
+    /* pushes the icon in the middle of the height */
+    z-index: 5;
+    top: 50%;
+    display: inline-block;
+}
+
+
+/* EVENT-SECTION START*/
+
+.event-section>header {
+    position: relative;
+    left: -15px;
+    height: 80px;
+}
+
+.event-section img {
+    transition: 0.4s;
+}
+
+.event-section img:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.section-heading {
+    display: inline-block;
+}
+
+h3.section-heading::after {
+    position: absolute;
+    z-index: 0;
+    bottom: 20px;
+    left: 20;
+    width: 30px;
+    height: 2px;
+    content: '';
+    background-color: #c5c5c5;
+}
+
+.calendar-link {
+    font-size: 12px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.fa-calendar {
+    color: rgb(229, 161, 86);
+}
+
+.thumbnail {
+    display: block;
+    min-height: 350px;
+    border: none;
+    padding-top: 16px;
+    padding-left: 8px;
+    /*border: 1px solid black;*/
+}
+
+.thumbnail>img {
+    width: 200px;
+    height: 180px;
+    border: 3px solid #fff;
+}
+
+.read-more {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.read-more>.fa {
+    color: #e5a156;
+}
+
+.thumbnail>a {
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    left: 120px;
+    color: black;
+}
+
+.thumbnail>a>.fa {
+    color: #e5a156;
+}
+
+.thumbnail-caption {
+    font-size: 13px;
+    position: relative;
+    top: 20px;
+    padding-left: 20px;
+    color: #767676;
+}
+
+figcaption {
+    position: relative;
+    bottom: -50px;
+}
+
+.view-all {
+    position: relative;
+    left: 10px;
+    top: -10px;
+    float: right;
+    display: block;
+    background-color: rgb(229, 161, 86);
+    padding: 8px 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+a.view-all:hover {
+    color: white;
+    background-color: #E7532E;
+}
+
+
+/*NEWS SECTION start*/
+
+.news-section {}
+
+.news-section header {
+    position: relative;
+    left: 5px;
+    height: 80px;
+}
+
+.news-section h3.section-heading::after {
+    position: absolute;
+    z-index: 0;
+    bottom: 20px;
+    left: 20;
+    width: 30px;
+    height: 2px;
+    content: '';
+    background-color: #c5c5c5;
+}
+
+.news-entry {
+    font-size: 13px;
+    position: relative;
+    left: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.news-links .news-links .fa {
+    color: #e5a156;
+}
+
+.date {
+    color: #c5c5c5;
+    margin-bottom: 10px;
+}
+
+.date>.fa {
+    font-size: 13px;
+}
+
+.news-link {
+    color: #01366A;
+    position: relative;
+    left: 15px;
+}
+
+.news-footer-link {
+    font-weight: bold;
+    color: black;
+}
+
+.news-footer-link .fa {
+    color: #e5a156;
+}
+
+.news-footer-link:nth-of-type(2) {
+    margin-left: 30px;
+}
+
+
+/* UET Contacts*/
+
+.contact-table {
+    font-weight: bold;
+}
+
+.contact-table td {
+    vertical-align: top;
+    text-align: left;
+    color: #767676;
+    height: 66px;
+    width: 187px;
+    padding: 8px;
+}
+
+.contact-table th {
+    padding: 8px;
+}
+
+.contact-table tr:nth-child(2n) {
+    background-color: #eee;
+}
+
+
+/* UET at a Glance */
+
+img[src^="img/glance"] {
+    /* position: absolute;*/
+    margin-left: 0;
+    transition: 0.4s;
+}
+
+img[src^="img/glance"]:hover {
+    transform: scale(1.07);
+}
+
+p.read-more {
+    text-align: right;
+}
+
+
+/* Weblinks */
+
+#weblinks {
+    background-color: #012951;
+    color: white;
+    padding-bottom: 3px;
+}
+
+#weblinks a {
+    color: white;
+    border: solid 1px white;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+.weblink-image {
+    width: 262px;
+    height: 200px;
+}
+
+.weblink-heading {
+    color: white;
+    height: 50px;
+}
+
+.weblink-heading:after {
+    display: block;
+    background-color: #c5c5c5;
+    bottom: -14px;
+    content: "";
+    height: 2px;
+    left: 0;
+    width: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* White Footer */
+
+.white-footer-heading {
+    color: black;
+}
+
+.white-footer-heading:after {
+    display: block;
+    background-color: #c5c5c5;
+    bottom: -14px;
+    content: "";
+    height: 2px;
+    left: 0;
+    width: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+.white-footer ul {
+    position: relative;
+    top: 20px;
+    color: #c5c5c5;
+}
+
+.white-footer li a {
+    color: #012951;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.newsletter {
+    color: #A9A9A9;
+    font-size: 13px;
+}
+
+.newsletter-form {
+    margin: 40px 0;
+    padding: 20px;
+    border: solid 2px #DFDFDF;
+    font-size: 13px;
+}
+
+.newsletter-form input {
+    font-size: 13px;
+    height: 40px;
+    width: 80%;
+    border: solid 2px #D0D0D0;
+    padding: 5px;
+    background-color: #F5F5F5;
+}
+
+.newsletter-form button {
+    height: 40px;
+    width: 45px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    background-color: #e5a156;
+}
+
+
+/* Follow Us */
+
+.follow-us {
+    margin-left: 0;
+    margin-top: 50px;
+    background-color: #F0F0F0;
+    height: 80px;
+    line-height: 80px;
+}
+
+.follow-us span {
+    padding: 10px;
+}
+
+
+/* Blue Footer */
+
+.blue-footer h3:after {
+    display: block;
+    background-color: #4579C4;
+    bottom: -14px;
+    content: "";
+    height: 2px;
+    left: 0;
+    width: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+.blue-footer {
+    background-color: #1757B5;
+    color: white;
+    font-size: 13px;
+    padding: 30px 0;
+}
+
+.blue-footer h3 {
+    margin-bottom: 30px;
+}
+
+.blue-footer p {
+    line-height: 20px;
+}
+
+.blue-footer li a {
+    color: white;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.blue-footer iframe {
+    height: 250px;
+    width: 263px;
+}
+
+.blue-footer img {
+    margin-left: 15px;
+}
+
+
+/* Final Footer */
+
+.final-footer {
+    background-color: #012447;
+    color: white;
+    height: 55px;
+    line-height: 55px;
+    font-size: 13px;
+}
+
+.final-footer p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+}

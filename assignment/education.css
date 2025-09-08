@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .featured-courses {
+    margin-bottom: 30px;
+  }
+  
+  .featured-courses h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* More styles for different elements and sections */
+  

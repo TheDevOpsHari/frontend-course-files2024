@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <body>
+        <!-- logo  -->
+        
+        <!-- <div class="paypal-logo">
+            <i>Pay</i>
+            <i>Pal</i>
+          </div> -->
+          <!-- logo end  -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Login <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Number</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png?20150315064712" alt="">
+        </nav>
+        <!-- payment page  -->
+        <div>
+            <h1>Donate with PayPal</h1>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="your_email@example.com">
+                <input type="hidden" name="item_name" value="Donation">
+                <input type="hidden" name="currency_code" value="USD">
+    
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" required>
+    
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <div class="dropdown ">
+            <button class="dropbtn glow-on-hover" type="button">Payment</button>
+            <div class="dropdown-content">
+              <a href="#">UPI Number</a>
+              <a href="#">Phone Pay</a>
+              <a href="#">Google Pay</a>
+            </div>
+          </div>
+        
+    </body>
+</body>
+</html>
