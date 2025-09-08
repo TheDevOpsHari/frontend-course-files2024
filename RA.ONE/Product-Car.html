@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Product-Car.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="left">
+            <div class="menu"><a href="#">
+                    <img src="https://i.postimg.cc/W4BKj0HJ/bars.png"></a>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn">
+                <span class="play"></span>
+                <span class="small-box"></span>
+            </button>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="https://i.postimg.cc/Dwy3YQ9v/lgo.png"> </a>
+        </div>
+    </div>
+    <!--navigation-End-->
+    <div class="content-container">
+        <div class="img-container">
+            <a href="#">
+                <img src="https://i.postimg.cc/qM6kxGH9/Mercedes-2.png"></a>
+        </div>
+        <div class="text-container">
+            <h1>
+                <font color="dodgerblue">302</font> Racing Car Mercedes
+                <font>Hanumangarh</font>
+            </h1>
+            <p>911 racing car powerd by porsche.This is a beautifull racing car and super fast speed</p>
+            <a href="#" class="price">$18200</a>
+            <button class="pushable">
+                <span class="front"> Demo</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".btn").click(function () {
+                $(".btn").toggleClass("active");
+                $(".play").toggleClass("active");
+                $(".small-box").toggleClass("active");
+                if ($(".small-box").hasClass("active")) {
+                    $(".small-box").removeClass("pauseToPlay");
+                } else {
+                    $(".small-box").addClass("pauseToPlay");
+                }
+                // $(input).addClass("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
