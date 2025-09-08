@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p id="p1">This is a paragraph.</p>
+    <button id="b1">Click me</button>
+
+
+    <script>
+        $(document).ready(function () {
+            let str1 = "batman";
+            let str2 = "ironman";
+            let str3 = "brous";
+            //Example- 1
+            $("#b1").click(function () {
+                // $("#p1").append("<b>Luiyp Education</b>")
+                // $("#p1").prepend("<b>Luiyp Education</b>")
+
+                // $("#p1").after("<b>Luiyp Education</b>")
+                // $("#p1").before("<b>Luiyp Education</b>")
+
+                $("#p1").append(str1, str2, str3)
+                $("#p1").prepend(str1, str2, str3)
+            });
+            //Example- 2
+
+        });
+    </script>
+</body>
+
+</html>
