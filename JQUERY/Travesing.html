@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            width: 500px;
+        }
+
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="ancestors">
+            <ul>
+                (Grand parent)
+                <li>
+                    <span>Child</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div style="width: 500px;">
+        <ul>
+            (Grand parent)
+            <li>
+                <p>(Direct Parents)
+                    <span>span</span>
+                </p>
+            </li>
+        </ul>
+    </div>tastnrosion childer
+
+    <script>
+        $(document).ready(function () {
+
+            //Example-1
+            // $("span").parent().css({ "color": "red", "border": "2px solid red" });
+
+            //Example-2
+            // $("span").parents("ul").css({ "color": "red", "border": "2px solid red" });
+
+            //Example-3
+            // $("span").parents("ul").css({ "color": "blue", "border": "2px solid red" });
+
+            //Example-4
+            $("span").parentsUntil("div").css({ "color": "green", "border": "2px solid red" });
+        });
+    </script>
+</body>
+
+</html>

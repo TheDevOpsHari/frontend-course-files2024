@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Get Methods</h1>
+    <form action="" id="sform">
+        <label for="">E-mail</label><input type="email" id="sname"> <br><br>
+        <label for="">Class</label><input type="text" id="sclass"><br><br>
+        <label for="">Country</label>
+        <!-- Change Event-3 -->
+        <select id="country">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+    <script>
+        $(document).ready(function () {
+            //On pressing submit button will happen:-
+            $("#sform").submit(function () {
+
+                //Example Email Print-1
+                // var name = $("#sname").val();
+                // document.write(name);
+
+                //Example class Print-2
+                // var className = $("#sclass").val();
+                // document.write(className);
+
+                //Example country  Print-3
+                var country = $("#country").val();
+                document.write(country);
+                alert($("#country")).html();
+
+            });
+        });
+    </script>
+</body>
+
+</html>

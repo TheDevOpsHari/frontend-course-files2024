@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        img {
+            height: 200px;
+            width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="Hide">Hide</button>
+    <button id="Show">Show</button>
+    <p> <img src="img/programming-background-collage_23-2149901776.jpg" alt=""><br>
+        <b> This is a paragraph with little content.</b>
+    </p>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            //Exm: Peragarph and img Hide-1
+            $("#Hide").click(function () {
+                $("p").hide("slow", function () {
+                    alert("The paragraph is now hidden");
+                });
+            });
+
+            //Exm: Peragarph and img Show-1 
+            $("#Show").click(function () {
+                $("p").show("slow", function () {
+                    alert("The paragraph is now show");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

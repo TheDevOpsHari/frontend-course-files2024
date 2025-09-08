@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            background-color: blueviolet;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus fugiat, nemo dignissimos totam
+        earum ea, quasi asperiores dolor neque culpa iste provident error molestias maiores velit laudantium quos
+        deleniti.</div>
+    <button id="b1">Click me</button>
+    <p class="p1">this is consectetur adipisicing</p>
+    <p class="p2">this is consectetur adipisicing</p>
+    <p class="p3">this is consectetur adipisicing</p>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                // $("#d1").remove();
+                // $("#d1").empty();
+                $("p").remove(".p1, .p2, .p3");
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

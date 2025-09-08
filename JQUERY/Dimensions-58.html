@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+        }
+
+        .box2 {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <!-- //Example-2. .height() //Example-1. .widht() -->
+    <div class="box"></div>
+    <button class="btn1">width()</button>
+    <button class="btn2">height()</button>
+    <br><br>
+
+    <!-- //Example-4. .innerheight() //Example-4. .innerheight() -->
+    <div class="box2"></div>
+    <button class="btn3">innerwidth()</button>
+    <button class="btn4">innerheight()</button>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            //Example-1.   .widht()
+            $(".btn1").click(function () {
+                alert("width:" + $(".box").width());
+
+                //Example-2.   .height()
+                $(".btn2").click(function () {
+                    alert("height:" + $(".box").height());
+                });
+
+                //Example-3.   .innerwidth()
+                $(".btn3").click(function () {
+                    alert("innerWidth:" + $(".box2").innerWidth())
+                });
+
+                //Example-4.   .innerheight()
+                $(".btn4").click(function () {
+                    alert("innerHeight:" + $(".box2").innerHeight())
+                });
+            });
+           
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            #box {
+
+                background-color: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            form {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Event</h1>
+    <form action="" id="sform">
+        <label for="">E-mail</label><input type="email" id="sname"> <br><br>
+        <label for="">Class</label><input type="text" id="sclass"><br><br>
+        <label for="">Country</label>
+        <!-- Change Event-3 -->
+        <select id="country01">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <br><br>
+    <div id="test" style="border: 3px solid black; background-color: yellow;"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            //focus Event-1
+            $("#sname,#sclass,#country01").focus(function () {
+                $(this).css("background-color", 'lime');
+            });
+
+            //Blur Event-: Focus hatne pr
+            $("#sname,#sclass,#country01").blur(function () {
+                $(this).css("background-color", 'yellow');
+                });
+
+            // Change Event-3
+            $("#country01").change(function () {
+                $(this).css("background-color", 'yellow');
+            });
+
+
+            //When the country changes, it will appear in this Div:-
+            $("#country01").change(function () {
+                var a = $(this).val();
+                $("#test").html(a);
+            });
+
+            // Submit Button Event Click Here:-
+            $("#sform").submit(function () {
+                document.write("Form Submitted successful");
+            });
+        });
+    </script>
+</body>
+
+</html>

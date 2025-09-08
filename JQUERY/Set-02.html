@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #batman {
+            width: 70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="batman">
+        <h2 class="red">Test Box</h2>
+        <p>Lorem ipsumspan <span> dolor sit amet, consectetur adipisicing elit.</span>sam soluta magni voluptatibus
+            reprehenderit
+            quaerat? Sint nihil et, omnis odit veritatis impedit voluptates voluptate corporis deleniti dolore placeat,
+            voluptatem atque fugiat.</p>
+    </div>
+    <br>
+    <button id="clickbutton">Set Value</button>
+    <br><br>
+    <!-- New Example-.val() -->
+    <form action="" id="sform">
+        <label for="">Name</label>
+        <input type="test" id="sname"><br><br>
+
+        <label for="">Class</label>
+        <input type="text" id="sclass"></label><br><br><br>
+        <input type="submit">
+
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            //Example:-1   .text()
+            $("#clickbutton").click(function () {
+                $("#batman h2").text("Hello Batman");
+                $("#batman p").text("batman you have to save the world");
+
+                //Example:-2   .html()
+                $("#batman p").html("<h3>batman</h3> <b>you have to</b> save the world");
+
+                //Example:-3   .attr()
+                $("#batman h2").attr("class", "red");
+
+
+                //<!-- New Example- start     .val() -->
+                $("#sname").val("Hareesh Kumar");
+                $("#sclass").val("12");
+            });
+
+
+            $("input").click(function () {
+                $("#sname").val("Hareesh Kumar");
+                $("#sclass").val("12");
+
+            });
+        });
+    </script>
+</body>
+
+</html>

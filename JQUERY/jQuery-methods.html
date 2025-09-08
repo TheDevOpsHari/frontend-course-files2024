@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- // 1. text() - Sets or returns the text content of selected elements  -->
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="button1">Show Text</button>
+
+    <!-- 2. html() - Sets or returns the content of selected elements(including HTML markup) -->
+    <button id="button2">Show HTML</button>
+    <br><br>
+
+    <!-- //  3. val() - Sets or returns the value of form fields -->
+    Name: <input type="text" value="Mickey Mouse">
+    <button id="button3">Show Value</button>
+
+    <script>
+        $(document).ready(function () {
+            // 1. text() - Sets or returns the text content of selected elements 
+            $("#button1").click(function () {
+                alert("Text: " + $("#test").text());
+                document.write("Text: " + $("#test").text());
+            });
+
+            // 2. html() - Sets or returns the content of selected elements(including HTML markup)
+            $("#button2").click(function () {
+                alert("HTML: " + $("#test").html());
+                document.write("HTML: " + $("#test").html());
+            });
+
+            //  3. val() - Sets or returns the value of form fields
+            $("#button3").click(function () {
+                alert("Value: " + $("input").val());
+                document.write("Value: " + $("input").val());
+            });
+        });
+    </script>
+</body>
+
+</html>

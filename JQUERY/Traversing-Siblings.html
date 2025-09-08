@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="siblings">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+        <br><br>
+        <!-- //Example-5 .nextUntil("h6") -->
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+            <p>p</p>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        //Example-1   .siblings()
+        // $("h2").siblings().css({ "color": "red", "border": "2px solid red" });
+
+        //Example-2   .siblings("p")
+        // $("h2").siblings("p").css({ "color": "red", "border": "2px solid red" });
+
+        //Example-3   .next()
+        // $("h2").next().css({ "color": "red", "border": "2px solid red" });
+
+        //Example-4   .nextAll()
+        // $("h2").nextAll().css({ "color": "red", "border": "2px solid red" });
+
+        //Example-5   .nextUntil("h6")
+        $("h2").nextUntil("h6").css({ "color": "red", "border": "2px solid red" });
+    });
+</script>
+
+</html>

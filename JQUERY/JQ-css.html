@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .c1 {
+            font-size: 50px;
+            color: white;
+            background-color: brown;
+        }
+
+        .c2 {
+            color: red;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="h1">Test</h1>
+    <p id="p1">this is a preagraph</p>
+    <div id="d1">div</div>
+    <button id="btn1">Click Me</button>
+    <br>
+    <button id="btn2">Click Here</button>
+    <br>
+    <button id="btn3">Click here</button>
+    <br><br>
+    <p id="p2" style="background-color: #861e1e;">this is a preagraph</p>
+    <button id="btn4">Get css</button>
+    <br><br>
+    <button id="btn5">Click me</button>
+    <button id="btn6">Click me</button>
+    <br>
+    <button id="btn7">Click me</button>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            //Example-1.
+            $("#btn1").click(function () {
+                // $("#h1,#p1").addClass("c2")
+                // $("#d1").addClass("c1")
+                $("#d1").addClass("c1 c2")
+            });
+
+            //Example-2.
+            $("#btn2").click(function () {
+                $("#d1").removeClass("c2");
+            });
+
+            //Example-3.
+            $("#btn3").click(function () {
+                $("#d1").toggleClass("c1");
+            });
+
+            //Example-4.
+            $("#btn4").click(function () {
+                alert($("#p2").css("background-color"));
+            });
+
+            //Example-5.
+            $("#btn5").click(function () {
+                $("#p2").css("background-color", "yellow")
+            });
+
+            //Example-6.
+            $("#btn6").click(function () {
+                $("#p2").css("background-color", "blue")
+            });
+
+            //Example-7.
+            $("#btn7").click(function () {
+                $("#p2").css("background-color", "black", "color", "white", "font-size", "200%")
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

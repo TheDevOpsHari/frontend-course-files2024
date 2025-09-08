@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(242, 255, 127);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe sequi corrupti earum fugiat
+        delectus voluptates commodi, quo cupiditate, cumque iusto similique dolore perspiciatis fuga reprehenderit
+        tempora natus nulla.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe sequi corrupti earum fugiat
+        delectus voluptates commodi, quo cupiditate, cumque iusto similique dolore perspiciatis fuga reprehenderit
+        tempora natus nulla.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe sequi corrupti earum fugiat
+        delectus voluptates commodi, quo cupiditate, cumque iusto similique dolore perspiciatis fuga reprehenderit
+        tempora natus nulla.</P>
+    <br>
+    <div id="d1">Mouse Leave</div>
+    <br>
+    <h1>Mouse Down/Up</h1>
+    <br>
+    <p id="po" style="border: 2px solid;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit culpa
+        provident, ea assumenda nihil porro
+        magnam ipsa cumque quaerat. Velit ad fugit autem quisquam et similique quaerat, in eum iste.</p>
+    <br>
+    <p id="po3" style="border: 2px solid;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit culpa
+        provident, ea assumenda nihil porro
+        magnam ipsa cumque quaerat. Velit ad fugit autem quisquam et similique quaerat, in eum iste.</p>
+    <br>
+    First name: <input type="text" name="fullname"> <br>
+    <br>
+    <p id="rj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus provident accusantium
+        eligendi,
+        minima, obcaecati in necessitatibus iure deleniti sed consequuntur, natus modi incidunt laudantium pariatur?
+        Nobis reiciendis incidunt commodi.</p>
+    <script>
+        $(document).ready(function () {
+            // $("p").click(function () {
+            //     $(this).hide();
+            // });
+
+            //dblclick
+            $("p").dblclick(function () {
+                $(this).hide();
+            });
+
+            //mouse enter
+            // $("div").mouseenter(function () {
+            //     alert("You enter the warzone");
+            // })
+            $("#d1").mouseleave(function () {
+                $("#d1").css('background-color', 'blue');
+            });
+
+            //mouse down/Up
+            $("h1").mousedown(function () {
+                $("h1").css('background-color', 'green');
+            });
+            //Example:-
+            $("h1").mouseup(function () {
+                $("h1").css('background-color', 'red');
+            });
+
+            //mouse hover-1
+            $("#po").hover(function () {
+                $("#po").css('background-color', 'blue');
+            });
+            $("#po3").hover(function () {
+                $("#po3").css('background-color', 'black');
+            });
+
+            //input focus-
+            $("input").focus(function () {
+                $("input").css("background-color", "yellow");
+            });
+
+            //Example-
+            $("input").blur(function () {
+                $("input").css("background-color", "red");
+            });
+
+
+            //example-3
+            $("#rj").on(function () {
+                $("#rj").css("background-color", "red");
+            });
+            //example-4
+            $("#rj").mouseenter(function () {
+                $("#rj").css("background-color", "blue");
+            });
+
+            //example-5
+            $("#rj").mouseleave(function () {
+                $("#rj").css("background-color", "yallow");
+            });
+
+            //example-6
+            $("#rj").click(function () {
+                $("#rj").css("background-color", "black");
+            });
+        });
+    </script>
+</body>
+
+</html>

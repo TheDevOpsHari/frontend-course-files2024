@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p {
+            background-color: palevioletred;
+            padding: 7px;
+            border: solid 1px #c3c3c3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab magnam rem fugiat accusamus, rerum
+        consequatur voluptate at dolorum omnis quas? Dignissimos dolorum maxime ratione rem maiores dolorem harum?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores natus quasi qui, consequuntur pariatur,
+        quia aut modi nisi, iure delectus iusto maiores? Consectetur rerum facilis error libero consequatur, vero
+        fugiat!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit amet, autem nobis odio id distinctio
+        voluptas saepe iste totam pariatur quia corporis illum aliquam, numquam sint labore voluptates consequuntur
+        itaque.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora placeat quasi, illo deserunt qui ex vero
+        aperiam iste, doloribus quia atque repellat velit voluptatibus? Architecto velit vero asperiores nemo
+        distinctio.</p>
+    <br>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <br>
+    <p id="toggle044">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore laudantium veritatis
+        cumque! Minus
+        necessitatibus voluptatibus quos alias veritatis dolorum doloremque autem, sapiente molestiae natus similique
+        explicabo laudantium id dolorem?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe officiis, dolorem obcaecati ea nulla minus ad
+        reprehenderit sint possimus rerum? Impedit ut repellat accusamus, fuga dolores laboriosam iusto dignissimos
+        dicta!
+    </p>
+    <button id="toggle">toggle</button>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide(2000);
+            });
+            //Example Show-
+            $("#show").click(function () {
+                $("p").show(2000);
+            });
+            //Example toggle
+            $("#toggle").click(function () {
+                $("#toggle044").toggle(2000);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

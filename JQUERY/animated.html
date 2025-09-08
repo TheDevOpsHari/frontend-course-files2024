@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #d2,
+        #d3 {
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        #d3 {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="b1">Start</button>
+    <br>
+    <div id="d1"
+        style="height: 100px; width: 100px; background-color: blueviolet; position: absolute; text-align: center;">
+        Animated</div>
+    <br><br><br><br><br><br>
+    <button id="button-stop">stop</button>
+    <div id="d2">Animated</div>
+    <div id="d3">Animated</div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            //Exm: animate-1
+            $("#b1").click(function () {
+                $("#d1").animate({
+                    left: '250px',
+                    opacity: '0.5px',
+
+                    // height: '250px',
+                    // width: '250px'
+
+                    // height: '+=150px',
+                    // width: '+=150px'
+
+                    height: 'toggle',
+                    width: 'toggle'
+
+                }, 'slow');
+            });
+            $("#d2").click(function () {
+                $("#d3").slideDown(5000);
+            });
+            $("#button-stop").click(function () {
+                $("#d3").stop();
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

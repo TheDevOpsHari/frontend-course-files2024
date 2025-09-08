@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .descendants * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="descendants" style="width:500px;"> div (current element)
+        <p class="first">p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            //Example-1   .children() 
+            // $("div").children().css({ "color": "red", "border": "2px solid red" });
+
+            //Example-2   .children("p.first")
+            // $("div").children("p.first").css({ "color": "red", "border": "2px solid red" });
+
+            //Example-3   .find() 
+            // $("div").find("span").css({ "color": "red", "border": "2px solid red" });    
+
+            //Example-4   .find("*") 
+            $("div").find("*").css({ "color": "red", "border": "2px solid red" });
+
+        });
+    </script>
+</body>
+
+</html>

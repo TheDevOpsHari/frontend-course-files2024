@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+        }
+
+        .box2 {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            padding: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button class="btn1">width()/height()</button>
+    <br><br>
+    <div class="box2"></div>
+    <button class="btn3">innerwidth()</button>
+    <button class="btn4">innerheight()</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                let str = "";
+                str += "width of div:" + $(".box").width() + "<br>";
+                str += "height of div:" + $(".box").height();
+                //Example-6.  .innerWidth()   .innerHeight() 
+                str += "innerWidth of div: " + $("#box3").innerWidth() + "</br>";
+                str += "innerHeight of div: " + $("#box3").innerHeight() + "</br>";
+                $(".box").html(str);
+
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

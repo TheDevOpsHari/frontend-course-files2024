@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p>This is a peragraph.</p>
+
+    <div style="border: 2px solid blue;">
+        <p>A peragraph in a div.</p>
+        <p>Another peragraph in a div-1.</p>
+    </div>
+    <br><br>
+    <div style="border: 1px solid red;">
+        <p id="intro">A peragraph in another div.</p>
+        <p id="intro">Another peragraph in another div-2.</p>
+    </div>
+    <br><br>
+    <div style="border: 1px solid red;">
+        <p>A peragraph in another div.</p>
+        <p>Another peragraph in another div-3.</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // Example-1   .first() 
+            // $("div").first().css("background-color", "yellow");
+
+            // Example-2   .last()
+            // $("div").last().css("background-color", "yel3low");
+
+            // Example-3  .eq(1)
+            // $("p").eq(1).css("background-color", "yellow");
+
+            // Example-4  .filter()
+            // $("p").filter("#intro").css("background-color", "yellow");
+
+            // Example-4  .not()
+            $("p").not("#intro").css("background-color", "yellow");
+
+        });
+    </script>
+  
+</body>
+
+</html>

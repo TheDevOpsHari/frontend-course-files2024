@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #d1,
+        #d2 {
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+
+        }
+
+        #d2 {
+            padding: 50px;
+            display: none;
+        }
+
+        #d3,
+        #d4 {
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+
+        }
+        #d5,
+        #d6 {
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+            
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="d1">click me slideDown</div>
+    <div id="d2">d2</div>
+    <br><br>
+    <div id="d3"> click me slideUp</div>
+    <div id="d4">d4</div>
+    <br><br>
+    <div id="d5"> click me slidetoggle</div>
+    <div id="d6">Lorem ipsum dolor sit amet</div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Exm: slideDown-1
+            $("#d1").click(function () {
+                $("#d2").slideDown("slow");
+            });
+
+
+            //Exm: slideUp-2
+            $("#d3").click(function () {
+                $("#d4").slideUp("slow");
+            });
+
+            //Exm: slideToggle-3
+            $("#d5").click(function () {
+                $("#d6").slideToggle("slow");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

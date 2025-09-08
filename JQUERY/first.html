@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Example - selectors -->
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <button>Click here</button>
+    <h3>If you click on me</h3>
+    <!-- Exmaple 2nd -->
+    <div class="d1">If you click on me-2</div>
+    <h2 id="demo">If you click on me-2</h2>
+    <!-- Exmaple 3 -->
+    <img src="img/programming-background-collage_23-2149901776.jpg" alt="" style="height: 300px; width: 385px;">
+    <img src="img/programming-background-collage_23-2149901789.avif" alt="" id="img"
+        style="height: 300px; width: 385px;">
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+                $("h3").hide();
+            });
+            $("button").click(function () {
+                $(".d1").hide();
+                $("#demo").hide();
+            });
+            $("button").click(function () {
+                $("img").hide();
+            })
+            $("button").click(function () {
+                $("#img").hide();
+            })
+        });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p id="test1">This is a paragraph.</p>
+    <p id="test2">This is another paragraph.</p>
+    Input field: <input type="text" id="test3" value="  Nobita">
+    <br><br>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+    <br><br>
+    <a href="https://luiyp.com/" id="oggy">luiyp.com</a>
+    <button>Change href Value</button>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            //Example-1. Set Text
+            $("#btn1").click(function () {
+                $("#test1").text("Hello world!");
+            });
+            //Example-2. Set html
+            $("#btn2").click(function () {
+                $("#test2").html("<b>Hello world!</b>");
+            });
+            //Example-3. Set value .val()
+            $("#btn3").click(function () {
+                $("#test3").val("Doraemon");
+            });
+            //Example-4. Mouse over the link (or click on it) to see that the value of the href attribute has changed.
+             $("button").click(function () {
+               $("#oggy").attr("href", "https://danikmedia.com/");
+                alert("href").attr("href");
+            })
+        });
+    </script>
+</body>
+
+</html>

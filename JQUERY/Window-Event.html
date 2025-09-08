@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window-Event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Window-Event</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto mollitia, nulla iusto, aliquid
+            doloribus harum enim ut error reprehenderit culpa! Tempore mollitia nam nulla at enim cum nihil delectus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque explicabo non incidunt deserunt
+            perspiciatis maiores id cupiditate, aliquid dolor aperiam quaerat placeat rem necessitatibus, hic repellat
+            amet, magni culpa?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio unde impedit obcaecati, consequuntur
+            voluptatibus quae molestias dolorem eius quas doloribus fuga delectus adipisci explicabo in omnis corrupti,
+            eligendi alias qui!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quam, error, natus fugit voluptatum nam quos
+            beatae deserunt ullam iure molestias officiis rerum quisquam voluptates tenetur labore cupiditate quod
+            optio!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis magni commodi voluptates consequatur illo.
+            Laborum sint exercitationem, enim voluptatem tempore distinctio doloribus nostrum! Quibusdam, officia
+            voluptas. Totam sint fuga quos!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptate voluptatibus quasi dolor atque
+            repellat, consequatur porro et ipsa fugit ipsam cupiditate qui reiciendis ducimus rem laborum necessitatibus
+            sunt? Nesciunt!
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum a soluta asperiores atque ipsam, laborum
+        corrupti libero molestiae est? Possimus dolor deserunt, reiciendis facilis provident itaque fugiat libero. Quo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum ut at quas cumque! Blanditiis nisi
+        architecto dolores asperiores qui distinctio culpa placeat excepturi alias! Consequuntur deleniti eligendi
+        aspernatur accusamus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa officia impedit animi consectetur corrupti alias
+        beatae atque exercitationem illum minus deserunt amet esse, soluta facere minima veniam natus, rerum excepturi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur cupiditate pariatur eos necessitatibus,
+        beatae laborum iste maiores natus libero repudiandae illo nam quibusdam non laboriosam aliquam at nobis
+        deleniti. Accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates, cupiditate eaque,
+        veniam doloremque saepe quis minus, optio dignissimos reiciendis dolor eligendi obcaecati voluptate voluptas
+        dolorem velit. Architecto, dolor dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid ducimus pariatur quos, asperiores,
+        sapiente ea ullam nam recusandae quod, incidunt blanditiis molestias inventore porro numquam deleniti obcaecati
+        suscipit? Adipisci.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur tempora inventore doloremque! Error
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque fugit veritatis neque nulla laborum
+        aut velit totam dolorem recusandae dolorum magnam libero architecto, voluptates sunt? Similique excepturi
+        dolorum nesciunt!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores magni repellendus, dicta deserunt quaerat
+        praesentium! Repellat nihil provident quos officia. Ex, commodi. Veniam vero itaque, eum adipisci explicabo
+        aperiam quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam soluta error eius magni voluptatem
+        fugit mollitia consequatur, optio ad, corrupti facilis unde non doloremque deleniti repellat neque vitae cumque!
+        tempore corrupti excepturi atque soluta ipsa, aliquid ducimus sed saepe in a dolores! Odit, officia corrupti.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolorem, itaque ipsam voluptates dolores explicabo
+        neque sapiente nisi officiis labore, alias, natus facere amet minima facilis fugiat eos repudiandae? Alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil quod sapiente explicabo alias ipsum
+        fugit velit dolores maxime sit veniam exercitationem natus rem vel, veritatis ducimus repellendus nostrum
+        labore?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum animi, illo fugiat autem neque nam
+        fuga quisquam laborum aspernatur sequi maxime dolores praesentium magnam? Dolorum a praesentium eius ducimus?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia recusandae exercitationem quaerat
+        laborum blanditiis minus obcaecati dolorum, ipsa eum enim commodi suscipit atque numquam, asperiores minima?
+        Cum, aliquid facere!
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt accusamus! Rem officiis deleniti earum
+        vitae, esse tempore nostrum. Non eum libero sequi asperiores quasi modi nihil similique perspiciatis debitis.
+    </p>
+
+
+    <script>
+        $(document).ready(function () {
+            //Window Scroll Example:-1.
+            $(window).scroll(function () {
+                document.write("You are scrolling");
+            });
+
+            //Example:-2
+            $(window).load(function () {
+                document.write("You are scrolling");
+            });
+
+            //Example:-3
+            $(window).unload(function () {
+                document.write("You are scrolling");
+            });
+        });
+    </script>
+</body>
+
+</html>

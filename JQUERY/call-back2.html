@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+        }
+
+        img {
+            height: 300px;
+            width: 350px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <p><img src="img/programming-background-collage_23-2149901776.jpg" alt="">
+        This is a paragraph with little content.</p>
+    <!-- <button id="show">d1</button>
+        <div id="d1">d1</div> -->
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide(5000, function () {
+                    alert("Hiiden is applied");
+                });
+
+            });
+            //Exm Show
+            $("#show").click(function () {
+                $("p").show(5000);
+                alert("Hiiden is applied");
+
+            });
+        });
+    </script>
+</body>
+
+</html>

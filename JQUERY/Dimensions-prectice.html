@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #box3 {
+            height: 200px;
+            width: 380px;
+            padding: 18px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- //Example-5.   .outerWidth()   .outerHeight()  -->
+    <div id="box3"></div>
+    <button class="btn5">Click me </button>
+    <br><br>
+    <button id="btn6">Click Here</button>
+
+
+    <script>
+        $(".btn5").click(function () {
+            var txt = "";
+            txt += "Width of div: " + $("#box3").width() + "</br>";
+            txt += "Height of div: " + $("#box3").height() + "</br>";
+            txt += "Outer width of div: " + $("#box3").outerWidth() + "</br>";
+            txt += "Outer height of div: " + $("#box3").outerHeight() + "</br>";
+            //Example-6.  .innerWidth()   .innerHeight() 
+            txt += "innerWidth of div: " + $("#box3").innerWidth() + "</br>";
+            txt += "innerHeight of div: " + $("#box3").innerHeight() + "</br>";
+            //Example-7.  .outerWidth()   .outerHeight() 
+            txt += "outerHeight of div: " + $("#box3").outerHeight() + "</br>";
+            txt += "outerWidth of div: " + $("#box3").outerWidth() + "</br>";
+            //Example-8.  document Width()   document Height() 
+            txt += "document width of div: " + $(document).width() + "</br>";
+            txt += "document width of div: " + $(document).height() + "</br>";
+            //Example-8.  window Width()   window Height() 
+            txt += "window width of div: " + $(window).height() + "</br>";
+            txt += "window width of div: " + $(window).width() + "</br>";
+            $("#box3").html(txt);
+            $(document).ready(function () {
+                $("#btn6").click(function () {
+                    $("#box3").width(600).height(600);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse-Events Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+        #box {
+            text-align: center;
+            background-color: pink;
+            padding: 10px;
+            border: 1.5px solid #000;
+        }
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;">JQuery Mouse Events</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit laboriosam, recusandae voluptates
+            deleniti saepe voluptatibus non exercitationem animi cumque voluptate harum sequi, quam, nulla officiis
+            modi? Quam ex consequatur repellendus.</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#box").click(function () {
+                $("#box").css('background-color', 'Green');
+            });
+
+            //dblclick Example-Start:
+            $("#box").dblclick(function () {
+                $("#box").css('background-color', 'orange');
+            });
+
+            //contextmenu Example-Start: matlb Hai Right Click-;
+            $("#box").contextmenu(function () {
+                $("#box").css('background-color', 'blue');
+            });
+
+            //Mouse Enter Example-Start: matlb Mouse aane per Event Change ho-:
+            $("#box").mouseenter(function () {
+                $("#box").css('background-color', 'red');
+            });
+
+            //Mouse Leave Example-Start: matlb Jese hi aap Mouse hetayge to colour Change ho-:
+            $("#box").mouseleave(function () {
+                $("#box").css('background-color', 'purple');
+            });
+        });
+    </script>
+</body>
+
+</html>

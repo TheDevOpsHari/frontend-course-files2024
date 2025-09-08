@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            #box {
+                background-color: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JQuery Keyboard Event</h1>
+    <div id="box">
+        <h2>keypress</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi error labore numquam accusantium ad
+            itaque, laudantium eaque, aliquam esse maxime. Dolore hic, corporis necessitatibus tenetur tempore
+            consequatur! Facilis, quo!</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // keypress Event-1
+            $("body").keypress(function () {
+                $("body").css("background-color", "orange");
+            });
+                        
+            //Keyup Event-2
+            $("body").keyup(function () {
+                $("body").css("background-color", "greenyellow");
+            });
+
+            //Keydown Event-3
+            $("body").keydown(function () {
+                $("body").css("background-color", "red");
+            });
+        });
+    </script>
+</body>
+
+</html>

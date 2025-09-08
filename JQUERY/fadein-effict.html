@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="toggle">toggle</button>
+    <button id="fadeto">Fadeto</button>
+    <br>
+    <div id="d1" style="height: 100px; width: 100px; display: none; background-color: red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <br>
+    <div id="d2" style="height: 100px; width: 100px; display: none; background-color: yellow;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <br>
+    <div id="d3" style="height: 100px; width: 100px; display: none; background-color: blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+
+    <script>
+        $(document).ready(function () {
+
+            //fadein Exp-1
+            $("#fadein").click(function () {
+                $("#d1").fadeIn();
+                $("#d2").fadeIn("slow");
+                $("#d3").fadeIn(3000);
+            });
+
+            //fadeout Exp-2
+            $("#fadeout").click(function () {
+                $("#d1").fadeOut();
+                $("#d2").fadeOut("slow");
+                $("#d3").fadeOut(3000);
+            });
+
+            //toggle Exp-3
+            $("#toggle").click(function () {
+                $("#d1").fadeToggle();
+                $("#d2").fadeToggle("slow");
+                $("#d3").fadeToggle(3000);
+            });
+
+            //fadeto Exp-4
+            $("#fadeto").click(function () {
+                $("#d1").fadeTo("slow", 0.15);
+                $("#d2").fadeTo("slow", 0.15);
+                $("#d3").fadeTo("slow", 0.15);
+            });
+        });
+    </script>
+</body>
+
+</html>

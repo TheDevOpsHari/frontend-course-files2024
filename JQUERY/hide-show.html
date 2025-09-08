@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        img {
+            height: 200px;
+            width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>If you click on the "Hide" button, I will disappear.
+        <img src="img/programming-background-collage_23-2149901776.jpg" alt="">
+    </p>
+    <br>
+    <div>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            //show Eample-1
+            $("#show").click(function () {
+                $("p").show();
+            });
+        });
+        //hide example-1
+        $("#hide").click(function () {
+            $("p").hide();
+        });
+    </script>
+</body>
+
+</html>
