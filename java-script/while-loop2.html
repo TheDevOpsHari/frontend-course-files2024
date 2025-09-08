@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/r-icon.png">
+</head>
+
+<body>
+    <form action="#">
+        Enter the number: <input type="text" id="dx">
+        <button onclick="whl()">Click here</button>
+    </form>
+    <script>
+        function whl() {
+            let y = document.getElementById("dx").value;
+            let i = 1;
+            while (i <= y) {
+                document.write(i + "<br>");
+                i++;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

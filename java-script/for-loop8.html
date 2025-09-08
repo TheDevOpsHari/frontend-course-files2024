@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:hover{
+            background-color: rgb(197, 137, 58);
+            color: black;
+        }
+        button {
+            background-color: rgba(0, 0, 255, 0.418);
+        }
+
+        button:hover {
+            background-color: blue;
+            font-size: 14.5px;
+        }
+
+        form {
+            margin-top: 80px;
+            background-color: antiquewhite;
+        }
+
+        form:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 50px; width: 300px;">
+        <form action="#" style="border: 2px solid">
+            Enter a number: <input type="text" id="moon">
+            <button onclick="sun()">Click here</button>
+        </form>
+    </div>
+    <script>
+        function sun() {
+            let y = document.getElementById("moon").value;
+            let num1 = 0;                               
+            let num2 = 1;                           
+            let num3 = num1 + num2;
+            document.write(num1 + " " + num2);
+            for (let i = 2; i <= y; i++) {  
+                num3 = num1 + num2; 
+                document.write(num3);
+                num1 = num2;
+                num2 = num3;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

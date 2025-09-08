@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+</body>
+<script>
+    const names = new Map([
+        ["Hareeh", 500],
+        ["Daya", 300],
+        ["Rahul", 200]
+    ]);
+    names.set("Ajay", 400);
+    names.forEach(function (value, key) {
+        document.write(key + "= " + value + "<br>");
+    })
+    document.write("<br>");
+    document.write(names.get("Ajay") + "<br>");
+    document.write("<br>");
+    names.delete("Daya");
+
+    names.set("Ajay", 400);
+    document.write("<br>");
+    names.forEach(function (value, key) {
+        document.write(key + "= " + value + "<br>");
+    })
+    document.write("<br>");
+    document.write(names.size + "<br>"); //value size check
+    document.write("<br>");
+    document.write(names.has("Rahul") + "<br>"); //True False Check 
+    document.write("<br>");
+    for (const x of names.entries()) {
+        document.write(x + "<br>");
+
+    }
+    document.write(names.get("Rahul") + "<br>");
+    names.delete("Rahul");
+    for (const x of names.entries()) {
+        document.write(x + "<br>");
+    }
+    document.write(names.has("Rahul") + "<br>");
+    document.write(names.has("Ajay") + "<br>");
+    document.write("<br>");
+    for (const y of names.entries()) {
+        document.write(y + "<br>");
+    }
+</script>
+
+
+</html>

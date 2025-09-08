@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="text">
+        Marks: <input type="text" id="num1">
+        <button type="button" onclick="check()">Status check</button>
+    </form>
+    <script>
+        function check() {
+            let a = document.getElementById("num1").value;
+            if (a >= 300) {
+                document.write("Congrats! first");
+            }
+            else if (a >= 225) {
+                document.write("Congrats! Second");
+            }
+            else if (a >= 165) {
+                document.write("Congrats! Third");
+            }
+            else {
+                document.write("Sorry! You are fail");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #l1:hover,
+        #l3:hover,
+        #l6:hover {
+            background-color: blueviolet;
+        }
+
+        #l2:hover,
+        #l4:hover {
+            background-color: red;
+        }
+
+        #l5:hover,
+        #l9:hover {
+            background-color: blue;
+        }
+
+        #l8:hover,
+        #l7:hover {
+            background-color: chartreuse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul style="background-color: aqua;">
+        <li id="l1">
+            <p id="p1"></p>
+        </li>
+        <li id="l2">
+            <p id="p2"></p>
+        </li>
+        <li id="l3">
+            <p id="p3"></p>
+        </li>
+        <li id="l4">
+            <p id="p4"></p>
+        </li>
+        <li id="l5">
+            <p id="p5"></p>
+        </li>
+        <li id="l6">
+            <p id="p6"></p>
+        </li>
+        <li id="l7">
+            <p id="p7"></p>
+        </li>
+        <li id="l8">
+            <p id="p8"></p>
+        </li>
+        <li id="l9">
+            <p id="p9"></p>
+        </li>
+
+        <script>
+            let Shopping = {
+                a: "Toor dal – 1 kg.", b: "Round urad dal – 2 kgs.", c: "Yellow moong dal – 1 kg.",
+                d: "Chana dal – 1/2 kg.", x: "Split urad dal – 1/2 kg.", y: "Rajma, peas, brown/white chana", z: "green gram dal, Peanuts – 1/4 kg each.",
+                w: "Fried gram dal / Pottukadalai – 1/4 kg.", s: "Horsegram, flax seeds – If needed."
+            };
+            document.getElementById("p1").innerHTML = Shopping.a;
+            document.getElementById("p2").innerHTML = Shopping.b;
+            document.getElementById("p3").innerHTML = Shopping.c;
+            document.getElementById("p4").innerHTML = Shopping.d;
+            document.getElementById("p5").innerHTML = Shopping.x;
+            document.getElementById("p6").innerHTML = Shopping.y;
+            document.getElementById("p7").innerHTML = Shopping.z;
+            document.getElementById("p8").innerHTML = Shopping.w;
+            document.getElementById("p9").innerHTML = Shopping.s;
+        </script>
+
+
+</body>
+
+</html>

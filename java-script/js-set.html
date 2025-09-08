@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+</body>
+<script>
+    const num = new Set([10, 20, 30, 40, 20, 40]);
+    document.getElementById("p1").innerHTML = num;
+    document.write(num.size + "<br>");
+    num.add(50);
+    num.add(60);
+    num.forEach(function (value) {
+        document.write(value + "<br>");
+    })
+    document.write(num.values() + "<br>"); // value check
+    for (const x of num.values()) {
+        document.write(x + "<br>");
+    }
+
+
+</script>
+
+</html>

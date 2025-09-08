@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter the number of value: <input type="text" id="num5">
+        <button onclick="p1()">Click here</button>
+    </form>
+  
+    <script>
+        function p1() {
+            let user1 = document.getElementById("num5").value;
+            document.write("number    square")
+            for (let i = 1; i <= user1; i++) {
+                document.write("<br>" + i + "&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp    " + i * i);
+            }
+        }
+    </script>
+</body>
+
+</html>

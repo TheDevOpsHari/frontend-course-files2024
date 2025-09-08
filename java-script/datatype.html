@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<p>1. String
+    <br>
+    2. Number
+    <br>
+    3. Bigint
+    <br>
+    4. Boolean
+    <br>
+    5. Undefined
+    <br>
+    6. Null
+    <br>
+    7. Symbol
+    <br>
+    8. Object
+</p>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+
+<body>
+    <script>
+        // Numbers:
+        let length = 16;
+        let weight = 7.5;
+        z = length + weight
+        document.getElementById("p1").innerHTML = length;
+        document.getElementById("p2").innerHTML = weight;
+        document.write(" Number is Subtraction length and weight: " + z);
+        document.write("<br>");
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+        x = color + lastName;
+        document.getElementById("p3").innerHTML = color;
+        document.getElementById("p4").innerHTML = lastName;
+        document.write(" Strings is Subtraction color and lastName: " + x);
+        document.write("<br>");
+        // Booleans
+        let d = 10;
+        let c = 30;
+        document.getElementById("p5").innerHTML = Boolean(d > c);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/r-icon.png">
+</head>
+
+<body>
+    <form action="#">
+        <b> Enter the number of rows: </b><input type="text" id="dj">
+        <button onclick="user()"><b>CLick Here</b></button>
+    </form>
+    <script>
+        function user() {
+            let rows = document.getElementById("dj").value;
+            let i = 1;
+            let j = 1;
+            let number = 1;
+            for (let i = 1; i <= rows; i++) {
+                for (j = 1; j <= i; j++) {
+                    document.write(number);
+                    ++number;
+                }
+                document.write("<br>");
+            }
+        }
+    
+    </script>
+</body>
+
+</html>

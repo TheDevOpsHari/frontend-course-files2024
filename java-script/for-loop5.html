@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/r-icon.png">
+</head>
+
+<body>
+    <form action="#">
+        Enter a number of: <input type="text" id="num2">
+        <input type="text" id="num3">
+        <button onclick="l5()">Click here</button>
+    </form>
+    <script>
+        function l5() {
+            let r1 = document.getElementById("num2").vaFlue;
+            let r2 = document.getElementById("num3").value;
+            let c;
+            document.write("prime numbers from " + r1 + " and " + r2 + " are: <br>");
+            for (let i = r1; i <= r2; i++) {
+                c = 0;
+                for (j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        c++;
+                    }
+                }
+                if (c == 2) {
+                    document.write(i + "<br>");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

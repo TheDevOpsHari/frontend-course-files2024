@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        const student1 = new student("Haresh", 22);
+        const student2 = new student("Rahul", 22);
+        document.write(student1.name + "" + student1.age + "<br>");
+        document.write(student2.name + "" + student2.age + "<br>");
+
+
+        class calaulator {
+
+            constructor(a, b) {
+                this.a = a;
+                this.b = b;
+            }
+
+            add() {
+                return (this.a + this.b);
+            }
+            sub() {
+                return (this.a - this.b);
+            }
+
+
+        }
+        const calc = new calaulator(20, 10);
+        document.write(calc.add() + "<br>");
+        document.write(calc.sub() + "<br>");
+
+        document.write("<br>");
+        //new Example: 
+        class calaulator1 {
+            constructor(a, b) {
+                this.a = a;
+                this.b = b;
+            }
+            add() {
+                return (this.a + this.b);
+            }
+            sub() {
+                return (this.a - this.b);
+            }
+        }
+        const calc1 = new calaulator1(500, 200);
+        document.write(calc1.add() + "<br>");
+        document.write(calc1.sub() + "<br>");
+
+    </script>
+</body>
+
+</html>

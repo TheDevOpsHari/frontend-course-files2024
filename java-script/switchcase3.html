@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a action : <input type="text" id="num1"> <br><br>
+    <button onclick="action()">Chack result</button>
+    <script>
+        function action() {
+            let message = document.getElementById("num1").value;
+            switch (message) {
+                case '1':
+
+                    document.write("hello");
+                    break;
+
+                case '2':
+
+                    document.write("hii");
+                    break;
+                case '3':
+
+                    document.write("hii");
+                    break;
+
+                default:
+                    document.write("Empty action received.");
+                    break;
+
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

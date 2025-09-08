@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="x"></p>
+    <p id="y"></p>
+    <p id="z"></p>
+    <p id="fail"></p>
+    <script>
+        let cars = ["bmw", "scorpio", "toyoto", "ferrari", "tata"];
+        document.write(cars[0] + "<br>");
+        document.write(cars[1] + "<br>");
+        document.write(cars[2] + "<br>");
+        document.write(cars[3] + "<br>");
+        document.write(cars[4] + "<br>");
+        cars[2] = "Mahindra";
+        document.write("Lenght of cars array is: " + cars.length + "<br>");
+        document.write("Last element is: " + cars[cars.length - 1] + "<br>"); //Element lenght check
+        document.write("Last element is: " + cars[cars.length - 5] + "<br>");//Element lenght check
+        document.write(cars[2] + "<br>");
+        // EXM:2
+        document.write("<br>");
+        let name = [];
+        name[0] = "Day a";
+        name[1] = "Jagmohan";
+        name[2] = "Hareesh";
+        document.write(name[0] + "<br>");
+        document.write(name[1] + "<br>");
+        document.write(name[2] + "<br>");
+        // EXM:3
+        document.write("<br>");
+        let marks = [10, 20, 30, 40, 50];
+        document.write(marks[0] + "<br>");
+        document.write(marks[1] + "<br>");
+        document.write(marks[2] + "<br>");
+        document.write(marks[3] + "<br>");
+        document.write(marks[4] + "<br>");
+        // EXM:4
+        document.write("<br>");
+        let studentsmarks = { x: "rahul=100%", y: "sunny=90%", z: "rohan=50%", fail: "ram=33%(sorry you are fail)" };
+        document.getElementById("x").innerHTML = studentsmarks.x;
+        document.getElementById("y").innerHTML = studentsmarks.y;
+        document.getElementById("z").innerHTML = studentsmarks.z;
+        document.getElementById("fail").innerHTML = studentsmarks.fail;
+
+
+    </script>
+</body>
+
+</html>

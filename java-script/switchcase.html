@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a number1: <input type="text" id="num1"> <br><br>
+    Enter a number2: <input type="text" id="num2"> <br><br>
+    Enter a symbol: <input type="text" id="symbol"> <br><br>
+    <button onclick="result()">Click Here</button>
+    <script>
+        function result() {
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let symbol = document.getElementById("symbol").value;
+            switch (symbol) {
+                case '+':
+                    document.write(x + y);
+                    break;
+                case '-':
+                    document.write(x - y);
+                    break;
+                case '*':
+                    document.write(x * y);
+                    break;
+                case '/':
+                    document.write(x / y);
+                    break;
+                default:
+                    document.write("Please enter a valid symbol");
+                    break;
+
+            }
+        }
+        
+    </script>
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>

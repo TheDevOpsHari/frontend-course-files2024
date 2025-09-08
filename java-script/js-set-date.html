@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS set date</title>
+</head>
+
+<body>
+    <script>
+        const d = new Date();
+        d.setFullYear(2021);
+        document.write(d);
+        document.write("<br>");
+        d.setFullYear(2021, 6, 15);
+        document.write(d);
+        document.write("<br>");
+        d.setMonth(7);
+        document.write(d);
+        document.write("<br>");
+        d.setDate(29);
+        document.write(d);
+        document.write("<br>");
+        d.setDate(d.getDate() + 30);
+        document.write(d);
+        document.write("<br>");
+        d.setHours(10)
+        document.write(d);
+        document.write("<br>");
+        d.setSeconds(20);
+        document.write(d);
+        document.write("<br>");
+        d.setMinutes(30);
+        document.write(d);
+        document.write("<br>");
+    </script>
+</body>
+
+</html>

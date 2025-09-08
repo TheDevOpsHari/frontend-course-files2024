@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let student = '{"students":[' +
+        '{"firstname":"Luiyp","Lastname":"Education"},' +
+        '{"firstname":"Haressh","Lastname":"Kumar"},' +
+        '{"firstname":"Rahul","Lastname":"Suthar"}]}';
+    const obj = JSON.parse(student);
+    document.write(obj.students[1].firstname + "<br>");
+    document.write(obj.students[1].Lastname + "<br>");
+    document.write("<br>");
+    //2nd Example
+    let fruit = '{"fruits":[' +
+        '{"fruitfirst":"Banana","fruitlast":"Apple"},' +
+        '{"fruitfirst":"Grape","fruitlast":"Blueberry"}+,' +
+        '{"fruitfirst":"Cherry","fruitlast":"Mango"}]}';
+    const adz = JSON.parse(fruit);
+    document.write(adz.fruits[2].fruitfirst + "<br>");
+    document.write(adz.fruits[2].fruitlast + "<br>");
+
+
+</script>
+
+</html>

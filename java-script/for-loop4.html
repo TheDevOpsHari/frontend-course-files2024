@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter the value of : <input type="text" id="ean">
+        <button onclick="iron()">Click now</button>
+    </form>
+    <script>
+        function iron() {
+            let num = document.getElementById("ean").value;
+            let c = 0;
+
+            for (let i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    c++;
+                }
+            }
+
+            if (c == 2) {
+                document.write("The given number is a prime number");
+            }
+            else {
+                document.write("The given number is not a prime number");
+            }
+        }
+    </script>
+</body>
+
+</html>

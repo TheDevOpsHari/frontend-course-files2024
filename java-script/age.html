@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgba(0, 0, 255, 0.185);
+        }
+        button:hover{
+            background-color: rgba(0, 0, 255, 0.678);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="text">
+        Age: <input type="text" id="num1">
+        <button type="button" onclick="check()">Status check</button>
+    </form>
+    <script>
+        function check() {
+            let a = document.getElementById("num1").value;
+            if (a >= 21) {
+                document.write("Congrats! You are selected");
+            }
+            else {
+                document.write("Sorry! You are not selected");
+            }
+        }
+    </script>
+</body>
+
+</html>

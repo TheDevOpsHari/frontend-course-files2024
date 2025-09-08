@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            height: 100%;
+            width: auto;
+        }
+
+        div {
+            margin-top: 20%;
+            background-image: url(img/bg.jpg);
+            text-align: center;
+        }
+
+        button {
+            background-color: (0, 132, 255, 0.493);
+        }
+
+        button:hover {
+            background-color: royalblue;
+            font-size: 13px;
+        }
+
+        #num1:hover {
+            background-color: rgba(0, 0, 255, 0.322);
+            font-size: 13px;
+        }
+
+        #num2:hover {
+            background-color: rgba(0, 0, 255, 0.322);
+            font-size: 13px;
+        }
+
+        #symbol:hover {
+            background-color: rgba(0, 0, 255, 0.336);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Enter a number 1st Value: <input type="text" id="num1"> <br><br>
+        Enter a number 2nd value: <input type="text" id="num2"> <br><br>
+        Enter a symbol : <input type="text" id="symbol"> <br><br>
+        <button onclick="result()">Chack result</button>
+    </div>
+    <script>
+        function result() {
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let symbol = document.getElementById("symbol").value;
+            switch (symbol) {
+                case '-':
+                    document.write(x - y);
+                    break;
+                case '*':
+                    document.write(x * y);
+                    break;
+                case '/':
+                    document.write(x / y);
+                    break;
+                case '+':
+                    document.write(x + y);
+                    break;
+                default:
+                    document.write("Please enter a valid symbol");
+                    break;
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

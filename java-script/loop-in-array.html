@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in array</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let names = ["Rahul", "Jagmohan", "Rishi", "Luiyp", "Yogi"];
+        let nl = names.length;
+        for (let i = 0; i <= nl; i++) {
+            document.write(names[i] + "<br>");
+        }
+        document.write("<br>");document.write("<br>");document.write("<br>");
+        document.write("<br>");document.write("<br>");document.write("<br>");
+        let students = ["Rahul", "Jagmohan", "Rishi", "Luiyp", "Yogi"];
+        document.getElementById("demo").innerHTML = students;
+        // students.push("Yash");
+        students[10] = "ajay";
+        
+        document.write(students[7] + "<br>");
+        document.write(students[8] + "<br>");document.write("<br>");document.write("<br>");
+        document.write("Type of value is: " + (typeof students) + "<br>");
+        document.write("<br>");
+        document.write(Array.isArray(students) + "<br>"); //check this array true / false   
+        document.write("<br>");
+        document.write(students instanceof Array);
+        document.write("<br>");
+        students[students.length] = "yash"; //element adding
+        document.write("<br>");
+        document.getElementById("demo1").innerHTML = students;
+        students.forEach(f1);
+        function f1(value) {
+            document.write(value + "<br>");
+        }
+    </script>
+</body>
+
+</html>

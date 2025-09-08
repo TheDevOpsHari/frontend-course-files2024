@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter a number: <input type="text" id="zzz">
+        <button onclick="batman()">Click now</button>
+    </form>
+    <script>
+        function batman() {
+            let w = document.getElementById("zzz").value;
+            for (let c = 1; c <= 10; c++) {
+                document.write((c * w) + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

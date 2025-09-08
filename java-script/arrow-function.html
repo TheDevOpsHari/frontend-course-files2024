@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a number: <input type="text" id="doc">
+    <br>
+    Enter a number: <input type="text" id="doc2">
+    <br>
+    <button onclick="user1()">Click here</button>
+</body>
+<script>
+    function user1() {
+        let xo = Number(document.getElementById("doc2").value);
+        let op = Number(document.getElementById("doc").value);
+        let add = (xo, op) => xo + op;
+        document.write(add(xo, op) + "<br>");
+    }
+
+</script>
+
+</html>

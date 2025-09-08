@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- The try statement defines a code block to run (to try).
+
+    The catch statement defines a code block to handle any error.
+
+    The finally statement defines a code block to run regardless of the result.
+
+    The throw statement defines a custom error. -->
+
+    Enter a number : <input type="text" id="num1"> <br><br>
+    <button onclick="check()">Chack result</button>
+
+</body>
+<script>
+    function check() {
+        let x = document.getElementById("num1").value;
+        try {
+            if (x.trim() == "") throw "Empty list";
+            if (isNaN(x)) throw "Not a number";
+            x = Number(x);
+            if (x < 10) throw "Number is less than 10";
+            if (x > 50) throw "Number is greater than 50"
+            if (x <= 50) throw "number is Submit"
+            if (x >= 10) throw "number is Submit"
+        }
+        catch (err) {
+            document.write(err);
+            document.write("<br>");
+        }
+        finally {
+            document.write("I will run always");
+        }
+    }
+
+</script>
+
+</html>

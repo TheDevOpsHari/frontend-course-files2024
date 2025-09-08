@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form action="text">
+    <h1>Chack year</h1>
+    year: <input type="text" id="num1">
+    <button type="button" onclick="check()">Status check</button>
+</form>
+
+<body>
+    <script>
+        function check() {
+            let year = document.getElementById("num1").value;
+            if (year % 400 == 0) {
+                document.write("2024 is a leap year.", year);
+            }
+            else if (year % 100 == 0) {
+                document.write("not a leap year.", year);
+            }
+            else if (year % 4 == 0) {
+                document.write("leap year.", year);
+            }
+            else {
+                document.write("not a leap year.", year);
+            }
+        }
+    </script>
+</body>
+
+</html>

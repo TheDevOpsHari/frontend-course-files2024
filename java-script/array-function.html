@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ś, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">paragrape-1</p>
+    <p id="p2">paragrape-2</p>
+    <p id="p3">paragrape-3</p>
+    <p id="p4">paragrape-4</p>
+    <p id="p5">paragrape-5</p>
+    <p id="p6">paragrape-6</p>
+    <script>
+        let marks = [10, 5, 7, 8, 20];
+        // exmple-1
+        document.write(marks.length + "<br>");
+        document.write([2] + "<br>");
+        document.write(marks.at(2) + "<br>");
+        document.write("<br>");
+        document.getElementById("p1").innerHTML = marks;
+
+        // exmple-2
+
+        let marks1 = marks.toString();
+        document.getElementById("p2").innerHTML = marks1;
+
+        document.write((typeof marks) + "<br>");
+        document.write((typeof marks1) + "<br>");
+
+        document.getElementById("p3").innerHTML = marks.join("* ");
+        marks.pop(); // Element ko hatana 
+        document.getElementById("p4").innerHTML = marks;
+
+        marks.push(40); // Element add krwaye
+        document.getElementById("p5").innerHTML = marks;
+
+        document.write(marks.indexOf(8) + 1 + "<br>"); //Check the position
+        document.write(marks.includes(17)); //True false Check
+        document.write("<br>");
+        // marks.reverse();
+        let names = ["rahul", "Ajay", "Jaggu", "Hari"];
+        names.sort();
+        document.getElementById("p6").innerHTML = names;    
+    </script>
+</body>
+
+</html>
